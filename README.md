@@ -63,12 +63,17 @@ docker run -it --entrypoint /bin/bash fastapi-ml-quickstart
 $ heroku login
 ```
 
-2. Push the latest commit to heroku master
+2. Create heroku app
+```
+$ heroku git:remote -a fastapi-ml-quickstart
+```
+
+3. Push the latest commit to heroku master
 ```
 $ git push heroku master
 ```
 
-3. You can check logs on the following command
+4. You can check logs on the following command
 ```
 
 $ heroku logs --tail
