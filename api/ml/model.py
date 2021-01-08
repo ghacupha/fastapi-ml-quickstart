@@ -70,6 +70,14 @@ model = Model(model_path)
 
 
 def get_model():
+    """
+    Model singleton.
+
+    This function returns the model to be used through out the application. The model is already 
+    configured and trained and is ready for use in prediction. The same is loaded from the file
+    system model.joblib file
+    """
+
     return model
 
 

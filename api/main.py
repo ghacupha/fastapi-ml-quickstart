@@ -11,6 +11,13 @@ from .ml.model import Model, get_model, n_features
 
 
 class PredictRequest(BaseModel):
+    """
+    Definition of the prediction request.
+
+    This object is an instance of  pydantic and is created to restrict input for requests
+    coming to the API. A validator is also installed and configured to ensure the data
+    adheres to the expected dimensions
+    """
     data: List[List[float]]
 
     @validator("data")
@@ -23,6 +30,11 @@ class PredictRequest(BaseModel):
 
 
 class PredictResponse(BaseModel):
+    """
+    Prediction matrix definition.
+
+    This is the expected output once the predict fuction has acted on the PredictRequest
+    """
     data: List[float]
 
 

@@ -1,5 +1,17 @@
 # fastAPI ML quickstart
 
+This is a quickstart app for serving a model on API with fastapi
+
+## Environment
+
+For purposes of creation of docker images configure the following variables in the GITHUB repo
+
+ - DOCKERHUB_USERNAME
+ - DOCKERHUB_TOKEN
+ - DOCKERHUB_ORG
+ - DOCKERHUB_REPO
+ - DOCKERHUB_VER
+
 ## Project setup
 1. Create the virtual environment.
 ```
