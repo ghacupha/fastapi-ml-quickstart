@@ -3,7 +3,7 @@ version: "3"
 services:
   fastapi-ml-quickstart:
     build: .
-    container_name: fastapi-ml-quickstart
+    container_name: ghacupha/fastapi-ml-quickstart:0.0.1-SNAPSHOT
     ports:
       - 8000:8000
 
