@@ -63,7 +63,7 @@ docker run -it --entrypoint /bin/bash fastapi-ml-quickstart
 $ heroku login
 ```
 
-2. Create heroku app
+2. Create heroku app on the heroku account and then run this
 ```
 $ heroku git:remote -a fastapi-ml-quickstart
 ```
