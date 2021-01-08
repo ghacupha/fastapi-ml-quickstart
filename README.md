@@ -56,6 +56,25 @@ docker run -p 8000:8000 fastapi-ml-quickstart
 docker run -it --entrypoint /bin/bash fastapi-ml-quickstart
 ```
 
+## Deployment with Heroku
+
+1. Login to Heroku
+```
+$ heroku login
+```
+
+2. Push the latest commit to heroku master
+```
+$ git push heroku master
+```
+
+3. You can check logs on the following command
+```
+
+$ heroku logs --tail
+```
+
+
 ## docker-compose
 1. Launching the service
 ```
