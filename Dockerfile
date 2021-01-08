@@ -1,11 +1,13 @@
-FROM ubuntu:19.10
+FROM python:3.6-stretch
 
 COPY ./api /api/api
 COPY requirements.txt /requirements.txt
 
-RUN apt-get update \
-    && apt-get install python3-dev python3-pip -y \
-    && pip3 install -r requirements.txt
+# install build utilities
+RUN apt-get update && \
+	apt-get install -y gcc make apt-utils apt-transport-https ca-certificates build-essential
+
+RUN pip install --no-cache-dir -r requirements.txt
 
 ENV PYTHONPATH=/api
 WORKDIR /api
