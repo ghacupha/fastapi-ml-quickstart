@@ -68,3 +68,8 @@ it can be specified with the `-f` switch. For example
 ```
 docker-compose -f docker-compose.test.yaml up --abort-on-container-exit --exit-code-from fastapi-ml-quickstart
 ```
+
+
+### Acknowledgments
+
+The bulk of the source code in this illustration was created by [Tivadar Danka](https://github.com/cosmic-cortex/fastAPI-ML-quickstart)
