@@ -16,6 +16,6 @@ jobs:
     steps:
     - name: Checking out the repository
       uses: actions/checkout@v1
-    # - name: Build the Docker image and run the tests
-    #   run: docker-compose -f docker-compose.test.yaml up --abort-on-container-exit --exit-code-from ${{ secrets.DOCKERHUB_REPO }}
+    - name: Build the Docker image and run the tests
+      run: docker-compose -f docker-compose.test.yaml up --abort-on-container-exit --exit-code-from ${{ secrets.DOCKERHUB_REPO }}
       # run: docker-compose -f docker-compose.test.yaml up --abort-on-container-exit --exit-code-from fastapi-ml-quickstart
