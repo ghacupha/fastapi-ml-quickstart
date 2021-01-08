@@ -1,2 +1,4 @@
 tests/
 .github/
+docker-compose.yaml
+docker-compose.test.yaml
